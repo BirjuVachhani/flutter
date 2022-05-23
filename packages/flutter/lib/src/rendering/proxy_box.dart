@@ -1970,6 +1970,7 @@ class RenderPhysicalModel extends _RenderPhysicalModelBase<RRect> {
     final Rect offsetBounds = offsetRRect.outerRect;
     final Path offsetRRectAsPath = Path()..addRRect(offsetRRect);
     bool paintShadows = true;
+
     assert(() {
       if (debugDisableShadows) {
         if (elevation > 0.0) {
